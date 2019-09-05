@@ -1,0 +1,31 @@
+.aboutUs{
+  color:#737373;
+  margin-top:2%;
+  display: flex;
+  background-color: #F0F1F1;
+  text-align: center;
+  >div{
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
+    p:first-of-type{
+      font-size:1.8rem;
+    }
+    img:first-of-type{
+      width:50%;
+    }
+    p:last-of-type{
+      font-size:1.3rem;
+      line-height: 2rem;
+    }
+    img:last-of-type{
+      width:32%;
+      height:32%;
+      float:right;
+
+    }
+  }
+  >img{
+    width:50vw;
+  }
+}

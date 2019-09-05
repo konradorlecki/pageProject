@@ -1,0 +1,83 @@
+
+.flex{
+  display:flex;
+  >img{
+    width:52%;
+  }
+}
+.loginButtons{
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  margin-top:5%;
+  margin-bottom: 2%;
+  font-size:1rem;
+  opacity:0.7;
+  p{
+    margin-left: 2%;
+    padding:1%;
+    a{
+      color:black;
+      text-decoration: none;
+    }
+  }
+  p:hover{
+    border: 1px solid gold;
+  }
+}
+.startButtons{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  p{
+    padding: 1%;
+    margin-left:2%;
+    font-size:1.15rem;
+  }
+  p:hover{
+    border:1px solid #737373;
+  }
+}
+.decoration{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h2:first-of-type{
+    margin-top:20%;
+  }
+  h2{
+
+    text-align: center;
+    font-size:1.8rem;
+    font-weight:400;
+  }
+  img{
+    display:block;
+    width:30%;
+    margin: 3% auto 7%;
+  }
+}
+.niceButtons{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.7rem;
+  color: #737373;
+  font-family: Merriweather;
+  div{
+    width:45%;
+    border: 1px solid #737373;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    p{
+      margin:auto;
+      a{
+        color:black;
+        text-decoration: none;
+        font-family: Merriweather, Serif;
+      }
+    }
+  }
+}

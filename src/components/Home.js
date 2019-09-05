@@ -1,9 +1,18 @@
-import React,{Component} from 'react'
-
+import React,{Component} from 'react';
+import HomeHeader from '../components/HomeHeader';
+import '../scss/HomeHeader.scss'
+import Stats from '../components/Stats'
+import SimpleSteps from "./SimpleSteps";
+import AboutUs from '../components/AboutUs'
 class Home extends Component{
     render() {
         return(
-            <h1>asdasdasdasdasdasd</h1>
+            <>
+            <HomeHeader/>
+            <Stats/>
+            <SimpleSteps/>
+            <AboutUs/>
+            </>
         )
     }
 }

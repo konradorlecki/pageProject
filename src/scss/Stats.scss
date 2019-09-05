@@ -1,0 +1,33 @@
+@import "settings/fonts";
+.stats{
+  font-family: Merriweather;
+  width: 100vw;
+  background-color: #F7CB12;
+  .contain{
+    margin-left:5vw;
+    margin-right:5vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 30vh;
+    div{
+      margin:auto;
+      margin-top:2%;
+      padding-left:4%;
+      padding-right:4%;
+      p:first-of-type{
+        font-family: $font-alt;
+        font-size:5rem;
+      }
+      h2{
+        margin-top:5%;
+        font-size:1rem;
+      }
+      p:last-of-type{
+        margin-top:5%;
+        opacity:0.7;
+      }
+    }
+
+  }
+}

@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Merriweather";
-  src: url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+  src: local('Merriweather'), url("https://fonts.googleapis.com/css?family=Merriweather:300i&display=swap");
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+  src: local('Open Sans'), url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 }
 $font-base: 'Open Sans';
 
