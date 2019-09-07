@@ -1,19 +1,24 @@
 import React, {Component} from 'react';
 import '../scss/foundation.scss'
 import Decoration from '../assets/Decoration.svg'
+import Pick from '../components/Pick'
 class Foundation extends Component{
+    state={
+        number: 1,
+    }
     render() {
             return(
-            <div>
+            <div className='foundation'>
                 <div>
-                    <p>Komu pomagamy?</p>
+                    <h2>Komu pomagamy?</h2>
                     <img src={Decoration}/>
                 </div>
                 <div>
-                    <p>Fundacjom</p>
-                    <p>Organizacjom pozarządowym</p>
-                    <p>Lokalnym zbiórkom</p>
+                    <div onClick={()=>this.setState({number:1})}><p>Fundacjom</p></div>
+                    <div onClick={()=>this.setState({number:2})}><p>Organizacjom <br/>pozarządowym</p></div>
+                    <div onClick={()=>this.setState({number:3})}><p>Lokalnym<br/> zbiórkom</p></div>
                 </div>
+                <Pick number={this.state.number}/>
             </div>
         )
     }

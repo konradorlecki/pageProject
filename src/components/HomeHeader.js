@@ -20,8 +20,8 @@ class HomeHeader extends Component{
                         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
                         <img src={Decoration} />
                         <div className='niceButtons'>
-                            <div><p><Link to='/login'>ODDAJ RZECZY</Link></p></div>
-                            <div><p><Link to='/login'>ZORGANIZUJ ZBIÓRKĘ</Link></p></div>
+                            <div><p><Link to='/login'>ODDAJ<br/> RZECZY</Link></p></div>
+                            <div><p><Link to='/login'>ZORGANIZUJ<br/> ZBIÓRKĘ</Link></p></div>
                         </div>
                     </div>
                 </div>

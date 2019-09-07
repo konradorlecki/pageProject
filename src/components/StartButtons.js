@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from "react-scroll";
-import * as Scroll from 'react-scroll'
-
 
 class StartButtons extends Component{
     render() {

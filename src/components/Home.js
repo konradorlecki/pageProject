@@ -13,8 +13,10 @@ class Home extends Component{
             <Stats/>
             <SimpleSteps/>
             <AboutUs/>
+            <Foundation/>
             </>
         )
     }
 }
 export default Home
+
