@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import '../scss/foundation.scss'
 import Decoration from '../assets/Decoration.svg'
 class Foundation extends Component{
-    if(){
-        
-    }
     render() {
             return(
             <div>
@@ -21,3 +18,4 @@ class Foundation extends Component{
         )
     }
 }
+export default Foundation
