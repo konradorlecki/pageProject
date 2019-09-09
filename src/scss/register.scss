@@ -1,0 +1,29 @@
+.register{
+  width:20vw;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  background-color:#F0F1F1;
+  height:25vh;
+  >div{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+  p{
+    text-align:left;
+  }
+    p:first-of-type{
+      padding-top:15%;
+    }
+    input{
+      width:100%;
+      background-color: #F0F1F1;
+      margin-top:3%;
+    }
+    hr{
+      height:1px;
+      width:100%;
+      background-color: #737373;
+    }
+  }
+}

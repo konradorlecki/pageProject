@@ -5,6 +5,7 @@ import Stats from '../components/Stats'
 import SimpleSteps from "./SimpleSteps";
 import AboutUs from '../components/AboutUs'
 import Foundation from '../components/Foundation'
+import Contact from '../components/Contact'
 class Home extends Component{
     render() {
         return(
@@ -14,6 +15,7 @@ class Home extends Component{
             <SimpleSteps/>
             <AboutUs/>
             <Foundation/>
+            <Contact/>
             </>
         )
     }

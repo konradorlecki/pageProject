@@ -11,7 +11,7 @@ class Foundation extends Component{
             <div className='foundation'>
                 <div>
                     <h2>Komu pomagamy?</h2>
-                    <img src={Decoration}/>
+                    <img src={Decoration} alt='Decoration'/>
                 </div>
                 <div>
                     <div onClick={()=>this.setState({number:1})}><p>Fundacjom</p></div>

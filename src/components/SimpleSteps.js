@@ -11,29 +11,29 @@ class SimpleSteps extends Component{
         return(
             <div className='simpleSteps' id='OCB'>
                 <h2>Wystarczą 4 proste kroki</h2>
-                <img src={Decoration}/>
+                <img src={Decoration} alt='Decoration'/>
                 <div>
                     <div>
                         <div>
-                            <img src={Icon1}/>
+                            <img src={Icon1} alt='Icon1'/>
                             <h2>Wybierz rzeczy</h2>
                             <hr/>
                             <p>ubrania, zabawki, sprzęt i inne</p>
                         </div>
                         <div>
-                            <img src={Icon2}/>
+                            <img src={Icon2} alt='Icon2'/>
                             <h2>Spakuj je</h2>
                             <hr/>
                             <p>skorzystaj z worków na śmieci</p>
                         </div>
                         <div>
-                            <img src={Icon3}/>
+                            <img src={Icon3} alt='Icon3'/>
                             <h2>Zdecyduj komu chcesz pomóc</h2>
                             <hr/>
                             <p>wybierz zaufane miejsce</p>
                         </div>
                         <div>
-                            <img src={Icon4}/>
+                            <img src={Icon4} alt='Icon4'/>
                             <h2>Zamów kuriera</h2>
                             <hr/>
                             <p>kurier przyjedzie w dogodnym terminie</p>

@@ -9,11 +9,11 @@ class AboutUs extends Component{
             <div className='aboutUs' id='about'>
                 <div>
                     <p>O nas</p>
-                    <img src={Decoration}/>
+                    <img src={Decoration} alt='Decoration'/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et faucibus mauris. Donec rutrum, augue vel bibendum iaculis, nibh velit hendrerit nibh.</p>
-                    <img src={Signature}/>
+                    <img src={Signature} alt='Signature'/>
                 </div>
-                <img src={People}/>
+                <img src={People} alt='People'/>
 
             </div>
         )
