@@ -1,11 +1,2 @@
-@font-face {
-  font-family: "Merriweather";
-  src: local('Merriweather'), url("https://fonts.googleapis.com/css?family=Merriweather:300i&display=swap");
-}
-@font-face {
-  font-family: "Open Sans";
-  src: local('Open Sans'), url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-}
-$font-base: 'Open Sans';
-
-$font-alt: 'Merriweather';
+$font-base: 'Open Sans',Tahoma, Sans-Serif ;
+$font-alt: 'Merriweather',Tahoma, Sans-Serif ;

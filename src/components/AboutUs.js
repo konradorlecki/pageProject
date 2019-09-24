@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import People from '../assets/People.jpg'
 import Decoration from '../assets/Decoration.svg'
 import Signature from '../assets/Signature.svg'
-import '../scss/aboutUs.scss'
+import '../scss/components/aboutUs.scss'
 class AboutUs extends Component{
     render() {
         return(

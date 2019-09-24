@@ -1,8 +1,8 @@
-@import "settings/reset";
-@import "settings/fonts";
+@import "./settings/reset";
+@import "./settings/fonts";
 
 body{
- font-family: $font-base;
+  font-family: $font-base;
   margin: auto;
 }
 .container{

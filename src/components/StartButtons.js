@@ -1,21 +1,15 @@
 import React, {Component} from 'react';
 import {Link} from "react-scroll";
+import {NavLink} from "react-router-dom";
 
 class StartButtons extends Component{
     render() {
         return(
             <div className='startButtons'>
-                <p><Link
-                    activeClass="active"
-                    to="start"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    delay={100}
-                    isDynamic={true}
-                >Start</Link></p>
-                <p><Link
+                <NavLink
+                   exact to="/"
+                >Start</NavLink>
+                <Link
                     activeClass="active"
                     to="OCB"
                     spy={true}
@@ -24,8 +18,8 @@ class StartButtons extends Component{
                     duration={500}
                     delay={100}
                     isDynamic={true}
-                >O co chodzi</Link></p>
-                <p><Link
+                >O co chodzi</Link>
+                <Link
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -34,8 +28,8 @@ class StartButtons extends Component{
                     duration={500}
                     delay={100}
                     isDynamic={true}
-                >O nas</Link></p>
-                <p><Link
+                >O nas</Link>
+                <Link
                     activeClass="active"
                     to="foundation"
                     spy={true}
@@ -44,8 +38,8 @@ class StartButtons extends Component{
                     duration={500}
                     delay={100}
                     isDynamic={true}
-                >Fundacja i organizacje</Link></p>
-                <p><Link
+                >Fundacja i organizacje</Link>
+                <Link
                     activeClass="active"
                     to="contact"
                     spy={true}
@@ -54,7 +48,7 @@ class StartButtons extends Component{
                     duration={500}
                     delay={100}
                     isDynamic={true}
-                >Kontakt</Link></p>
+                >Kontakt</Link>
             </div>
         )
     }

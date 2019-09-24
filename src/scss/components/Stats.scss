@@ -1,7 +1,7 @@
-@import "settings/fonts";
+@import "../settings/fonts";
 .stats{
   font-family: Merriweather;
-  width: 100vw;
+  width: 99vw;
   background-color: #F7CB12;
   .contain{
     margin-left:5vw;
@@ -11,6 +11,7 @@
     text-align: center;
     height: 30vh;
     div{
+      width:33%;
       margin:auto;
       margin-top:2%;
       padding-left:4%;

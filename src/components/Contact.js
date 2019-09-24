@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import BackgroundForm from '../assets/Background-Contact-Form.jpg'
 import Decoration from '../assets/Decoration.svg'
-import '../scss/Contact.scss'
+import '../scss/components/Contact.scss'
 class Contact extends Component{
     state={
         name:'',
@@ -18,12 +18,18 @@ class Contact extends Component{
         messageHrColor:'',
         informationColor:''
     }
+    handleChange = e => {
+        this.validation();
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+
     validationV2 = (e) =>{
         e.preventDefault();
-        this.validation();
         this.sendInfo();
         this.posting();
-        this.validateEmail();
+        // this.validateEmail();
     }
     validation = ()=>{
         if(this.state.name.indexOf(' ') === -1 && this.state.name.length > 0){
@@ -49,10 +55,11 @@ class Contact extends Component{
         if(this.state.nameAccept === 1 && this.state.emailAccept === 1 && this.state.messageAccept ===1) {
             this.setState({informationColor: 'green'})
     }}
-    // validateEmail=()=> {
-    //     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //     console.log(re.test(String(this.state.email).toLowerCase()));
-    // }
+    validateEmail=()=> {
+        // eslint-disable-next-line no-useless-escape
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        re.test(String(this.state.email).toLowerCase());
+    }
     posting=()=>{
         if(this.state.nameAccept === 1 && this.state.emailAccept === 1 && this.state.messageAccept ===1) {
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact',{
@@ -85,18 +92,18 @@ class Contact extends Component{
                     <form>
                         <div>
                             <p>Wpisz swoje imię</p>
-                            <input type='name' placeholder='Krzysztof' onChange={(e)=> this.setState({name:e.target.value})}/>
+                            <input name='name' type='name' placeholder='Krzysztof' value={this.state.name} onChange={this.handleChange}/>
                             <hr style={{background:this.state.nameHrColor}}/>
                             <p style={{color:this.state.nameColor}}>Podane imię nieprawidłowe</p>
                         </div>
                         <div>
                             <p>Wpisz swój email</p>
-                            <input type='email' placeholder='abc@xyz.pl' onChange={(e)=> this.setState({email:e.target.value})}/>
+                            <input name='email' type='email' placeholder='abc@xyz.pl' value={this.state.email} onChange={this.handleChange}/>
                             <hr style={{background:this.state.emailHrColor}}/>
                             <p style={{color:this.state.emailColor}}>Podany email nieprawidłowy</p>
                         </div>
                         <p>Wpisz swoją wiadomość</p>
-                        <textarea type='text' placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ligula a lacinia pulvinar. Pellentesque quis ultricies sem, nec laoreet nisl.Donec tincidunt ligula a lacinia pulvinar.' onChange={(e)=> this.setState({message:e.target.value})}/>
+                        <textarea type='text' name='message' value={this.state.message} placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ligula a lacinia pulvinar. Pellentesque quis ultricies sem, nec laoreet nisl.Donec tincidunt ligula a lacinia pulvinar.' onChange={this.handleChange}/>
                         <hr style={{background:this.state.messageHrColor}}/>
                         <p style={{color:this.state.messageColor}}>Wiadomość musi zawierać co najmniej 120 znaków</p>
                         <button onClick={this.validationV2}>Wyślij</button>

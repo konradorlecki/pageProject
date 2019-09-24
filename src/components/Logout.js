@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import {Link} from "react-router-dom";
 import StartButtons from "./StartButtons";
 import Decoration from "../assets/Decoration.svg";
-import '../scss/logout.scss'
+import '../scss/components/logout.scss'
 class Logout extends Component{
     render() {
         return(

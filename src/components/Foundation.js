@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../scss/foundation.scss'
+import '../scss/components/foundation.scss'
 import Decoration from '../assets/Decoration.svg'
 import Pick from '../components/Pick'
 class Foundation extends Component{

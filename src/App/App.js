@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../scss/App.scss';
+import '../scss/components/App.scss';
 import {HashRouter, Switch, Route} from "react-router-dom";
 import Home from '../components/Home'
 import NotFound from '../components/NotFound'
@@ -7,6 +7,9 @@ import Login from '../components/Login'
 import Register from "../components/Register";
 import Logout from "../components/Logout";
 class App extends Component{
+  componentWillUnmount() {
+    localStorage.removeItem('email');
+  }
   render() {
     return(
       <HashRouter>

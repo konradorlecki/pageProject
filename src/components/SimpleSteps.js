@@ -4,7 +4,7 @@ import Icon2 from '../assets/Icon-2.svg'
 import Icon3 from '../assets/Icon-3.svg'
 import Icon4 from '../assets/Icon-4.svg'
 import Decoration from '../assets/Decoration.svg'
-import '../scss/SimpleSteps.scss'
+import '../scss/components/SimpleSteps.scss'
 import {Link} from "react-router-dom";
 class SimpleSteps extends Component{
     render() {

@@ -13,33 +13,67 @@
   margin-bottom: 0.5vh;
   font-size:1rem;
   opacity:0.7;
+  height:38px;
   p{
-    margin-left: 2%;
     padding:1%;
-    border: 1px solid transparent;
+  }
+    a:first-of-type{
+      width:60px;
+    }
+    a:last-of-type{
+      width:92px;
+    }
     a{
+      margin-left: 2%;
+      padding:1%;
+      border: 1px solid transparent;
+      display:block;
       color:black;
       text-decoration: none;
-    }
   }
-  p:hover{
+  a:hover{
+    cursor:pointer;
     border: 1px solid gold;
   }
 }
+
 .startButtons{
   width:100%;
   display:flex;
   justify-content:flex-end;
-  p{
-    padding: 1%;
-    margin-left:2%;
-    font-size:1.15rem;
-    border:1px solid transparent;
+  .active{
+    border:1px solid #737373;
   }
-  p:hover{
+    a:nth-of-type(1){
+      width:46px;
+    }
+  a:nth-of-type(2){
+    width:100px;
+  }
+  a:nth-of-type(3){
+    width:50px;
+  }
+  a:nth-of-type(4){
+    width:189px;
+  }
+  a:nth-of-type(5){
+    width:67px;
+  }
+    a{height:25px;
+      padding: 0.5%;
+      margin-left:2%;
+      font-size:1.15rem;
+      border:1px solid transparent;
+      text-decoration: none;
+      display:block;
+      color:black;
+    }
+  a:hover{
+    cursor:pointer;
     border:1px solid #737373;
   }
 }
+
 .decoration{
   width: 80%;
   margin-left: auto;

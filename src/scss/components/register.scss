@@ -4,8 +4,8 @@
   margin-right:auto;
   text-align:center;
   background-color:#F0F1F1;
-  height:25vh;
-  >div{
+  height:30vh;
+  >div:first-of-type{
     width:70%;
     margin-left:auto;
     margin-right:auto;
@@ -25,5 +25,27 @@
       width:100%;
       background-color: #737373;
     }
+  }
+}
+.registerBtn{
+  position: absolute;
+  left: 36vw;
+  width: 27vw;
+  display:flex;
+  justify-content: space-between;
+  margin-top:3%;
+  button{
+    background-color: white;
+    font-size:1rem;
+    border: 1px solid transparent;
+    padding:2%;
+    opacity:0.7;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
+  button:hover{
+    border:1px solid #737373;
   }
 }
