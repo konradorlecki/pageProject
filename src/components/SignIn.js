@@ -12,27 +12,23 @@ class SignIn extends Component{
         hrPassColor: '#737373'
     }
     handleChange = e => {
-        this.validation();
         this.setState({
             [e.target.name]: e.target.value
+        },()=>{
+            this.validation()
         });
     }
-    validation=(e)=>{
+    validation=()=>{
         if(this.validateEmail()=== false){
-            this.setState({emailColor:'red'})
-            this.setState({hrEmailColor:'red'})
+            this.setState({emailColor:'red', hrEmailColor:'red'})
         }else{
-            this.setState({emailColor:'transparent'})
-            this.setState({hrEmailColor:'#737373'})
+            this.setState({emailColor:'transparent', hrEmailColor:'#737373'})
         }
         if(this.validatePassword()===false){
-            this.setState({hrPassColor:'red'})
-            this.setState({passwordColor:'red'})
+            this.setState({hrPassColor:'red',passwordColor:'red'})
         }else{
-            this.setState({hrPassColor:'#737373'});
-            this.setState({passwordColor:'transparent'})
+            this.setState({hrPassColor:'#737373', passwordColor:'transparent'});
         }
-
         this.validateEmail();
         this.validatePassword();
     }

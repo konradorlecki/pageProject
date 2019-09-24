@@ -15,31 +15,25 @@ class SignupForm extends Component{
     handleChange = e => {
         this.setState({
             [e.target.name]: e.target.value
-        });
+        },()=>this.validation());
     }
     validation=(e)=>{
         this.validateEmail();
         this.passwordValidation();
         this.password2Validation();
         if(this.validateEmail()=== false){
-            this.setState({emailColor:'red'})
-            this.setState({hrEmailColor:'red'})
+            this.setState({emailColor:'red', hrEmailColor:'red'})
         }else{
-            this.setState({emailColor:'transparent'})
-            this.setState({hrEmailColor:'#737373'})
+            this.setState({emailColor:'transparent', hrEmailColor:'#737373'})
         }
         if(this.passwordValidation()===false){
-            this.setState({hrPassColor:'red'})
-            this.setState({passwordColor:'red'})
+            this.setState({hrPassColor:'red', passwordColor:'red'})
         }else{
-            this.setState({hrPassColor:'#737373'});
-            this.setState({passwordColor:'transparent'})
+            this.setState({hrPassColor:'#737373', passwordColor:'transparent'});
         }if(this.password2Validation()===false){
-            this.setState({hrPassword2Color:'red'})
-            this.setState({password2Color:'red'})
+            this.setState({hrPassword2Color:'red',password2Color:'red'})
         }else{
-            this.setState({hrPassword2Color:'#737373'});
-            this.setState({password2Color:'transparent'})
+            this.setState({hrPassword2Color:'#737373',password2Color:'transparent'});
         }
     }
     validateEmail=()=> {
@@ -54,7 +48,6 @@ class SignupForm extends Component{
         return this.state.password2.length >= 6 && this.state.password === this.state.password2;
     }
     onSubmit = event => {
-        this.validation();
         event.preventDefault();
         if(this.validateEmail()=== true && this.passwordValidation()=== true && this.password2Validation()===true){
         this.props.firebase.doCreateUserWithEmailAndPassword(this.state.email, this.state.password)
@@ -72,7 +65,7 @@ class SignupForm extends Component{
     render() {
         return(
             <>
-            <div >
+            <div>
                 <p>Email</p>
                 <input name='email' type='email' onChange={this.handleChange}/>
                 <hr style={{background:this.state.hrEmailColor}}/>
